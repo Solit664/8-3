@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Halu Ngcu</strong>
+                        <p>
+                             Happy 8/3 miu miu :D Chúc Ngco 8/3 vui vẻ nhá <br>
+                             Em xin lũi nếu mà nó k như Ngco mong đợi nhá, I wanted to make a JS game <br>
+                             but it's too hard for me to do in such short amount of times... I'm not that good. <br>
+                             Anw chúc Ngco xinh hơn, ngoan hơn nghe lời e hơn và sống healthy hơn OwO. <br>
+                             I'll try to do better next time, I love u huni UwU.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
